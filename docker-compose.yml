@@ -3,7 +3,7 @@ version: '2'
 services:
   spark:
     image: s1mplecc/spark-hadoop:3
-    hostname: master
+    container_name: master
     environment:
       - SPARK_MODE=master
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
@@ -21,7 +21,7 @@ services:
       - '19888:19888'
   spark-worker-1:
     image: s1mplecc/spark-hadoop:3
-    hostname: worker1
+    container_name: worker1
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://master:7077
@@ -37,7 +37,7 @@ services:
       - '8081:8081'
   spark-worker-2:
     image: s1mplecc/spark-hadoop:3
-    hostname: worker2
+    container_name: worker2
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://master:7077
