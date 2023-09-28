@@ -46,3 +46,6 @@ TODO
 | \* **YARN ResourceManager**        | http://localhost:8088                   | 显示提交到 YARN 上的 Spark 应用      |
 | YARN NodeManager            | http://localhost:8042 | 显示工作节点配置信息和运行时日志                                     |
 | MapReduce Job History | http://localhost:19888 | MapReduce 历史任务 |
+
+## 注意事项
+PySpark 3.2: Compatible with pandas 1.0.x to 1.3.x.
